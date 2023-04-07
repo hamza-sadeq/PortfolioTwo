@@ -1,38 +1,155 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#menu {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+
+#menu span {
+  position: absolute;
+  background-color: #212529;
+  height: 0.1rem;
+  width: 70%;
+  transition: all .4s ease;
+}
+
+.Links {
+  padding: 10px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  transition: all .4s ease;
+}
+
+.Links:hover {
+  color: #f5df4e !important;
+}
+
+nav.active {
+  background-color: #fff;
+  border-bottom: 1px solid lightgray;
+  min-width: 100%;
+  transition: all .4s ease;
+  z-index: 999;
+}
+
+nav {
+  position: 'fixed';
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.View {
+  background-color: #212529;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.Contact {
+  margin-left: 10px;
+  color: #212529;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.Contact:hover {
+  text-decoration: underline;
+}
+
+.MyName {
+  border-bottom: 4px solid #f5df4e !important;
+  padding-bottom: 3px;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.Circle {
+  height: 120px;
+  background-color: #f5df4e !important;
+  width: 120px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.skill-percent {
+  height: 7px;
+  background-color: #e2e2e2;
+  width: 100%;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+}
+
+.skill-percent span {
+  height: 7px;
+  background-color: #f5df4e !important;
+  border-radius: 3px;
+  position: absolute;
+}
+
+.Cv {
+  padding: 100px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Cv a {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 15px 40px;
+  font-size: 18px;
+  transition: all .4s ease-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Cv a:hover {
+  color: #fff;
+  background-color: #212529;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hireMe {
+  background-image: url(https://harnishdesign.net/demo/react/callum/demo/images/intro-bg-2.jpg);
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: #000000b3;
+  text-align: center;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.hire-btn {
+  background-color: #f5df4e !important;
+  text-decoration: none;
+  color: #000;
+  padding: 15px 30px;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contactInput:focus {
+  outline: none;
+  border-bottom-color: #000;
 }
