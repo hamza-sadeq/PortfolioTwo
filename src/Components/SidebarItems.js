@@ -6,7 +6,7 @@ import { HashLink } from 'react-router-hash-link'
 
 const SidebarItems = () => {
     return (
-        <Stack display={'flex'} alignItems={'center'} margin={'150px 0'}>
+        <Stack display={'flex'} alignItems={'center'} margin={'150px 0'} data-aos="fade-up" data-aos-duration = '2000'>
             {
                 links.map((item, i) => (
                         <HashLink to={item.to} className='Links'>{item.name}</HashLink>

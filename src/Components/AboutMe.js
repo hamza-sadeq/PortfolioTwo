@@ -19,7 +19,7 @@ const AboutMe = () => {
             </Typography>
           </Box>
           <Grid container paddingTop={'50px'} justifyContent={'space-between'} >
-            <Grid md={8} xs={12} data-aos="fade-right" data-aos-duration = '2000' >
+            <Grid md={8} xs={12} data-aos="fade-down" data-aos-duration = '2000' >
               <Typography sx={{ fontSize: { sm: '30px', xs: '25px' }, textAlign: { md: 'start', xs: 'center' } }}>
                 Hi, I'm <span className='MyName'>Hamza Mohamed</span>
               </Typography>
@@ -27,7 +27,7 @@ const AboutMe = () => {
                 I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.
               </Typography>
             </Grid>
-            <Grid md={4} xs={12} data-aos="fade-left" data-aos-duration = '2000'  display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
+            <Grid md={4} xs={12} data-aos="fade-up" data-aos-duration = '2000'  display={'flex'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'}>
               <Typography textAlign={'center'} variant='h1' color={'#212529'} display={'flex'} alignItems={'center'} justifyContent={'center'}>
                 <samp style={{ zIndex: 2, fontSize: '150px' }}>22</samp>
                 <span className='Circle'></span>

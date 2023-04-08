@@ -51,7 +51,7 @@ const Home = () => {
             <Grid item md={6} xs={12} width={'100%'} alignItems={'center'} justifyContent={'center'} marginBottom={'40px'} sx={{
               display: { md: 'none', xs: 'flex' }
             }}>
-              <img data-aos="fade-left" data-aos-duration = '2000'  style={{ borderRadius: '50%', border: '8px solid #fff', width: '60%' }} src='/images/1664148522783.jpeg' />
+              <img data-aos="fade-up" data-aos-duration = '2000'  style={{ borderRadius: '50%', border: '8px solid #fff', width: '60%' }} src='/images/1664148522783.jpeg' />
             </Grid>
             <Grid data-aos="fade-down" data-aos-duration = '2000'  item md={6} xs={12} width={'100%'} sx={{
               textAlign: { md: 'start', xs: 'center' }

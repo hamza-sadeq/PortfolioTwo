@@ -39,6 +39,7 @@ const Sidebar = () => {
                 minWidth: '100%',
                 transition: 'all .4s ease',
                 opacity: isOpen ? '1' : '-1',
+                display: isOpen ? 'block' : 'none'
             }}>
                 <div style={{
                     zIndex: '5',
